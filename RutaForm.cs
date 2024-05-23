@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace ProyectoFinal
 {
@@ -17,21 +19,42 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
-
+        // agregar los ciudades a todos los combobox
         private void RutaForm_Load(object sender, EventArgs e)
         {
-            ComboBox cb1 = comboBox1;
-            string con = Properties.Settings.Default.MapaConnectionString;
-            SqlConnection cnn = new SqlConnection(con);
-            cnn.Open();
-            string query = "SELECT Nombre FROM Ciudad";
-            SqlCommand cmd = new SqlCommand(query, cnn);
-            SqlDataReader rdr = cmd.ExecuteReader();
-            while (rdr.Read())
+            var ciudades = Datos.Ciudades();
+
+            foreach (var datos in ciudades)
             {
-                cb1.Items.Add(rdr[0].ToString());
+                comboBox1.Items.Add(datos.Key);
+                comboBox2.Items.Add(datos.Key);
             }
-            rdr.Close();
+        }
+        
+        private void altaRuta_Click(object sender, EventArgs e)
+        {
+            string nombre = textBox1.Text;
+            string inicio = comboBox1.SelectedItem.ToString();
+            string destino = comboBox2.SelectedItem.ToString();
+
+            if (inicio == destino)
+            {
+                MessageBox.Show("Destino y ruta deben de ser diferentes");
+                return;
+            }
+
+            decimal distancia = numericUpDown1.Value;
+            decimal tAR = numericUpDown2.Value;
+            decimal cAR = numericUpDown3.Value;
+            decimal tTP = numericUpDown4.Value;
+            decimal cTP = numericUpDown5.Value;
+
+            using (StreamWriter sw = File.AppendText("rutas.txt"))
+            {
+                sw.WriteLine("\n{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}", 
+                    nombre, inicio, destino, distancia, tAR, cAR, tTP, cTP);
+            }
+            MessageBox.Show("Efectivamente dada de alta la ruta");
         }
     }
 }

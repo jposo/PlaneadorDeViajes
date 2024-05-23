@@ -75,6 +75,7 @@
     <Compile Include="CiudadForm.Designer.cs">
       <DependentUpon>CiudadForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos.cs" />
     <Compile Include="InfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +87,6 @@
     </Compile>
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MapaDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MapaDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,17 +129,6 @@
     <EmbeddedResource Include="RutaForm.resx">
       <DependentUpon>RutaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="MapaDataSet.xsc">
-      <DependentUpon>MapaDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MapaDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MapaDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MapaDataSet.xss">
-      <DependentUpon>MapaDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -161,14 +146,13 @@
     <None Include="Resources\mapamexico.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Mapa.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Mapa_log.ldf">
-      <DependentUpon>Mapa.mdf</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="ciudades.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ciudades.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rutas.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\mexico.png" />

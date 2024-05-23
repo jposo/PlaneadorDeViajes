@@ -63,13 +63,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProyectoFinal.Imagenes.mapamexico;
+            this.pictureBox1.Image = global::ProyectoFinal.Imagenes.mexico1;
             this.pictureBox1.Location = new System.Drawing.Point(22, 147);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(411, 276);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
             // label1
             // 
@@ -130,6 +131,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(19, 36);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(86, 17);
@@ -164,7 +166,8 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(18, 53);
+            this.radioButton3.Checked = true;
+            this.radioButton3.Location = new System.Drawing.Point(18, 30);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(69, 17);
             this.radioButton3.TabIndex = 1;
@@ -174,12 +177,10 @@
             // 
             // radioButton4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(18, 30);
+            this.radioButton4.Location = new System.Drawing.Point(18, 53);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(60, 17);
             this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Tiempo";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
@@ -191,6 +192,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Ruta mas corta";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -340,6 +342,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "BusqForm";
             this.Text = "Busqueda";
+            this.Load += new System.EventHandler(this.BusqForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

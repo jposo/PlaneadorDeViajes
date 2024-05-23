@@ -51,6 +51,9 @@
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.altaRuta = new System.Windows.Forms.Button();
+            this.bajaRuta = new System.Windows.Forms.Button();
+            this.cambioRuta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -265,11 +268,42 @@
             this.label13.TabIndex = 6;
             this.label13.Text = "km";
             // 
+            // altaRuta
+            // 
+            this.altaRuta.Location = new System.Drawing.Point(90, 411);
+            this.altaRuta.Name = "altaRuta";
+            this.altaRuta.Size = new System.Drawing.Size(92, 39);
+            this.altaRuta.TabIndex = 10;
+            this.altaRuta.Text = "Alta de Ruta";
+            this.altaRuta.UseVisualStyleBackColor = true;
+            this.altaRuta.Click += new System.EventHandler(this.altaRuta_Click);
+            // 
+            // bajaRuta
+            // 
+            this.bajaRuta.Location = new System.Drawing.Point(203, 411);
+            this.bajaRuta.Name = "bajaRuta";
+            this.bajaRuta.Size = new System.Drawing.Size(92, 39);
+            this.bajaRuta.TabIndex = 11;
+            this.bajaRuta.Text = "Baja de Ruta";
+            this.bajaRuta.UseVisualStyleBackColor = true;
+            // 
+            // cambioRuta
+            // 
+            this.cambioRuta.Location = new System.Drawing.Point(318, 411);
+            this.cambioRuta.Name = "cambioRuta";
+            this.cambioRuta.Size = new System.Drawing.Size(92, 39);
+            this.cambioRuta.TabIndex = 12;
+            this.cambioRuta.Text = "Cambio de Ruta";
+            this.cambioRuta.UseVisualStyleBackColor = true;
+            // 
             // RutaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 450);
+            this.ClientSize = new System.Drawing.Size(478, 478);
+            this.Controls.Add(this.cambioRuta);
+            this.Controls.Add(this.bajaRuta);
+            this.Controls.Add(this.altaRuta);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -323,5 +357,8 @@
         private System.Windows.Forms.NumericUpDown numericUpDown5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button altaRuta;
+        private System.Windows.Forms.Button bajaRuta;
+        private System.Windows.Forms.Button cambioRuta;
     }
 }

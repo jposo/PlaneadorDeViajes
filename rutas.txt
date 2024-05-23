@@ -1,0 +1,22 @@
+﻿Ruta 1	Mexicali	Tijuana	178	120	300	240	800
+Ruta 2	Tijuana	Ensenada	200	100	100	150	500
+Ruta 3	Mexicali	Hermosillo	700	1080	300	500	800
+Ruta 4	Hermosillo	Ciudad Juárez	1000	900	9000	1440	2500
+Ruta 5	Monterey	Saltillo	90	70	500	120	200
+Ruta 6	Ensenada	Loreto	1000	750	1000	800	1000
+Ruta 7	Ensenada	Mexicali	250	200	250	230	750
+Ruta 8	Mérida	Cancún	300	240	2000	300	500
+Ruta 9	Campeche	Oaxaca	1200	960	1500	1000	2500
+Ruta 10	Oaxaca	Chilpancingo	300	240	1500	360	600
+Ruta 11	Chilpancingo	Colima	800	600	5000	960	1500
+Ruta 12	Colima	Guadalajara	200	150	1000	180	300
+Ruta 13	Guadalajara	Tepic	220	180	1200	240	400
+Ruta 14	Tepic	Durango	500	350	500	530	1000
+Ruta 15	Ciudad Juárez	Chihuahua	370	240	2500	360	800
+Ruta 16	Chihuahua	Hermosillo	900	1060	1000	1100	1000
+Ruta 17	Loreto	La Paz	350	240	400	300	700
+Ruta 18	Durango	Saltillo	500	300	700	330	250
+Ruta 19	Campeche	San-Luis Potosí	1500	1200	5000	1440	3000
+Ruta 20	San-Luis Potosí	Durango	500	340	1500	400	1000
+Ruta 21	Chihuahua	Durango	650	450	1500	480	800
+Ruta 22	Campeche	Mérida	200	130	400	150	250

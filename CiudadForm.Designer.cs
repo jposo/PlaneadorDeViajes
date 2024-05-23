@@ -170,7 +170,6 @@
             this.Controls.Add(this.label1);
             this.Name = "CiudadForm";
             this.Text = "Ciudad";
-            this.Load += new System.EventHandler(this.CiudadForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.coordx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coordy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

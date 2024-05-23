@@ -1,0 +1,20 @@
+﻿Mexicali	43	15
+Tijuana	31	15
+La Paz	103	142
+Hermosillo	99	70
+Monterey	231	120
+Saltillo	217	124
+Ensenada	33	32
+Mérida	370	178
+Cancún	403	174
+Oaxaca	275	236
+Chilpancingo	235	231
+Colima	184	211
+Guadalajara	189	189
+Tepic	169	179
+Ciudad Juárez	153	38
+Chihuahua	158	85
+Loreto	89	114
+Durango	174	142
+Campeche	355	202
+San-Luis Potosí	221	169
