@@ -74,7 +74,15 @@ namespace ProyectoFinal
                     criterio = "costo";
                 else
                     criterio = "tiempo";
-            Datos.GenerarMatriz(transporte, criterio);
+            int[,] matriz = Datos.GenerarMatriz(transporte, criterio);
+            for (int i = 0; i < matriz.Length; i++)
+            {
+                for (int j = 0; j < matriz.Length; j++)
+                {
+                    Console.Write("{0} ", matriz[i, j]);
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
